@@ -1,10 +1,10 @@
-import { Children, createContext } from "react";
+import { children, createContext } from "react";
 export const GlopalStore = createContext()
-export default function MainStore({Children}){
+export default function MainStore({children}){
 
     const values = {};
      return (
-            <GlopalStore.Provider values={values}>{Children}</GlopalStore.Provider>
+            <GlopalStore.Provider value={values}>{children}</GlopalStore.Provider>
         )
 }
 
